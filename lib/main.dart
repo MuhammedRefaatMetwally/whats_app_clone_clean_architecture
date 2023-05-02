@@ -13,18 +13,15 @@ import 'package:whats_app_clone_clean_arch/presentation/bloc/my_chat/my_chat_cub
 import 'package:whats_app_clone_clean_arch/presentation/bloc/status/status_cubit.dart';
 import 'package:whats_app_clone_clean_arch/presentation/bloc/user/get_single_user/get_single_user_cubit.dart';
 import 'package:whats_app_clone_clean_arch/presentation/screens/home_screen/home_screen.dart';
-import 'package:whats_app_clone_clean_arch/presentation/screens/registeration_screen/registeration_screen.dart';
-import 'package:whats_app_clone_clean_arch/presentation/screens/registeration_screen/widgets/main_registeration_screen.dart';
 import 'package:whats_app_clone_clean_arch/presentation/screens/welcome_screen/welcome_screen.dart';
 import 'common/theme/dark_theme.dart';
 import 'common/theme/light_theme.dart';
 import 'data/model/user_model.dart';
 import 'injection_container.dart' as di;
-import 'local/shared_pref.dart';
 import 'on_generate_route.dart';
 import 'presentation/bloc/phone_auth/phone_auth_cubit.dart';
 import 'presentation/bloc/user/user_cubit.dart';
-import 'package:path_provider/path_provider.dart';
+
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

@@ -30,24 +30,21 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
   #state management
   flutter_bloc: ^8.1.2
   equatable: ^2.0.5
   flutter_riverpod: ^2.1.1
   path_provider: ^2.0.14
-    #firebase
+
+  #firebase
   firebase_auth: ^4.2.2
+  firebase_core: ^2.10.0
   cloud_firestore: ^4.5.0
   firebase_storage: ^11.1.0
   firebase_database: ^10.0.6
-  responsive_builder: ^0.6.4
-  cached_video_player: ^2.0.4
-  audioplayers: ^4.0.1
-  emoji_picker_flutter: ^1.5.4
-  camera: ^0.9.7+1
-  image_picker: ^0.8.7+3
-  advance_image_picker: ^0.1.7+1
-  #message shape bubble
+
+ #message shape bubble
   bubble: ^1.1.9+1
   flutter_contacts: ^1.1.6
   enough_giphy_flutter: ^0.4.0
@@ -70,7 +67,13 @@ dependencies:
   intl: ^0.18.1
   flutter_native_splash: ^2.2.15
   url_launcher: ^6.1.10
-
+  responsive_builder: ^0.6.4
+  cached_video_player: ^2.0.4
+  audioplayers: ^4.0.1
+  emoji_picker_flutter: ^1.5.4
+  camera: ^0.9.7+1
+  image_picker: ^0.8.7+3
+  advance_image_picker: ^0.1.7+1
 flutter_native_splash:
   color: "#FFFFFF"
   color_dark: "#111B21"
