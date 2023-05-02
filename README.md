@@ -19,8 +19,8 @@ Application is build with Clean Architecture of Robert C. Martin (Uncle Bob) TDD
 <li>Sending Voice Chat</li>
 <li>Sending Videos</li>
 <li>Camera feature</li>
-<li>Chatting with friends in your contacts</li>
-<li>Invite friends to whatsApp Clone app</li>
+<li>Chatting with your Friends </li>
+<li>Invite your Contacts to whatsApp Clone app</li>
 <li>Upload your Status</li>
 <li>Create Groups</li>
 <li>Show contacts who you can chat with</li>
