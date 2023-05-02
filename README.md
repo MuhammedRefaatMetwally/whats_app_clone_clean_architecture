@@ -25,6 +25,7 @@ Application is build with Clean Architecture of Robert C. Martin (Uncle Bob) TDD
 <li>Create Groups</li>
 <li>Show contacts who you can chat with</li>
 <li>Online/offline feature</li>
+<li>Dark/Light Mood based on device mood</li>
 <li>Automatic Scrolling on New Message</li>
 
 </ul>
