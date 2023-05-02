@@ -1,14 +1,12 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
+import 'package:whats_app_clone_clean_arch/common/utils/app_const.dart';
 import 'package:whats_app_clone_clean_arch/data/model/single_communication_model.dart';
-import 'package:whats_app_clone_clean_arch/presentation/pages/contact_page/chatting_widgets/single_communication_page.dart';
-import 'package:whats_app_clone_clean_arch/presentation/pages/contact_page/select_contact_page.dart';
-import 'package:whats_app_clone_clean_arch/presentation/pages/group_page/create_group_screen.dart';
-import 'package:whats_app_clone_clean_arch/presentation/pages/status_page/status_screen.dart';
-import 'package:whats_app_clone_clean_arch/presentation/pages/status_page/widgets/confirm_status_screen.dart';
+import 'package:whats_app_clone_clean_arch/presentation/screens/contact_screen/select_contact_page.dart';
+import 'package:whats_app_clone_clean_arch/presentation/screens/group_screen/create_group_screen.dart';
 import 'package:whats_app_clone_clean_arch/presentation/screens/registeration_screen/registeration_screen.dart';
-
+import 'package:whats_app_clone_clean_arch/presentation/screens/status_screen/status_screen.dart';
+import 'package:whats_app_clone_clean_arch/presentation/widgets/chatting_widgets/single_communication_page.dart';
+import 'package:whats_app_clone_clean_arch/presentation/widgets/status_widgets/confirm_status_screen.dart';
 import 'common/utils/page_const.dart';
 import 'data/model/status_model.dart';
 import 'domain/entities/user_entity.dart';
@@ -70,14 +68,7 @@ class OnGenerateRoute {
             return routeBuilder(const NoPageFound());
           }
         }
-      /*case PageConst.singleUserProfilePage:
-        {
-          if (args is String) {
-            return routeBuilder(SingleUserProfilePage(otherUserId: args));
-          } else {
-            return routeBuilder(const NoPageFound());
-          }
-        }*/
+
       default:
         {
           const NoPageFound();
@@ -98,10 +89,10 @@ class NoPageFound extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("No Page Found"),
+        title: const Text(AppConst.noPageFound),
       ),
       body: const Center(
-        child: Text("Page not found"),
+        child: Text(AppConst.pageNotFound),
       ),
     );
   }

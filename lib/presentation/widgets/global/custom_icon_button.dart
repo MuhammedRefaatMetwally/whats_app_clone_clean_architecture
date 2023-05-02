@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomIconButton extends StatelessWidget {
   const CustomIconButton({
@@ -31,12 +32,12 @@ class CustomIconButton extends StatelessWidget {
       child: IconButton(
         onPressed: onPressed,
         splashColor: Colors.transparent,
-        splashRadius: (minWidth ?? 48) - 24,
+        splashRadius: (minWidth ?? 48.r) - 24,
         iconSize: iconSize ?? 22,
         padding: EdgeInsets.zero,
         constraints: BoxConstraints(
-          minWidth: minWidth ?? 48,
-          minHeight: minWidth ?? 48,
+          minWidth: minWidth ?? 48.w,
+          minHeight: minWidth ?? 48.h,
         ),
         icon: Icon(
           icon,

@@ -1,6 +1,7 @@
 import 'package:country_pickers/country.dart';
 import 'package:country_pickers/utils/utils.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../common/utils/palette.dart';
 
 class CountryItem extends StatelessWidget {
@@ -9,8 +10,8 @@ class CountryItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Container(
-      height: 40,
-      width: 40,
+      height: 40.h,
+      width: 40.w,
       alignment: Alignment.center,
       decoration: const BoxDecoration(
         border: Border(

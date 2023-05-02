@@ -70,6 +70,10 @@ class AppConst {
   static const String chatTAB="CHAT";
   static const String statusTAB="STATUS";
   static const String callsTAB="CALLS";
+  static const String noPageFound="No Page Found";
+  static const String pageNotFound="Page not found";
+  static const String firebaseStorageProfileImageTxt="profileImage";
+  static const String logOut="Log Out";
   static const String whatsAppServerURL='https://whatsapp-clone-rrr.herokuapp.com';
 
   //MessageType

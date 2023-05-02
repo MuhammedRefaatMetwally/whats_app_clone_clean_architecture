@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:whats_app_clone_clean_arch/common/utils/app_const.dart';
 import 'package:whats_app_clone_clean_arch/presentation/screens/registeration_screen/widgets/country_dialog/country_dialog_item.dart';
 import '../../../../common/helper/show_alert_dialog.dart';
@@ -36,34 +37,34 @@ class _MainRegistrationScreenState extends State<MainRegistrationScreen> {
         return Scaffold(
           body: SafeArea(
             child: Container(
-              margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
+              margin:  EdgeInsets.symmetric(horizontal: 24.w, vertical: 32.h),
               child: Column(
                 children: <Widget>[
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: const [
-                      Text(AppConst.emptyText),
+                    children:  [
+                      const Text(AppConst.emptyText),
                       Text(
                        AppConst.verifyPhoneNumber,
                         style: TextStyle(
-                            fontSize: 18,
+                            fontSize: 18.sp,
                             color:  Palette.greenColor,
                             fontWeight: FontWeight.w500),
                       ),
-                      Icon(Icons.more_vert)
+                      const Icon(Icons.more_vert)
                     ],
                   ),
-                  const SizedBox(
-                    height: 30,
+                   SizedBox(
+                    height: 32.h,
                   ),
-                  const Text(
+                   Text(
                     AppConst.whatsDescription,
                     style: TextStyle(
-                      fontSize: 16,
+                      fontSize: 16.sp,
                     ),
                   ),
-                  const SizedBox(
-                    height: 32,
+                   SizedBox(
+                    height: 32.h,
                   ),
                   ListTile(
                     onTap: () => CountryDialog.show(
@@ -81,24 +82,24 @@ class _MainRegistrationScreenState extends State<MainRegistrationScreen> {
                   Row(
                     children: <Widget>[
                       Container(
-                        decoration: const BoxDecoration(
+                        decoration:  const BoxDecoration(
                             border: Border(
                                 bottom: BorderSide(
                           width: 1.50,
                           color:  Palette.greenColor,
                         ))),
-                        width: 48,
-                        height: 40,
+                        width: 48.w,
+                        height: 40.h,
                         alignment: Alignment.center,
                         child: Text(
                             "+${PhoneAuthCubit.selectedFilteredDialogCountry.phoneCode}"),
                       ),
-                      const SizedBox(
-                        width: 8.0,
+                       SizedBox(
+                        width: 8.0.w,
                       ),
                       Expanded(
                         child: SizedBox(
-                          height: 40,
+                          height: 40.h,
                           child: TextField(
                             controller: _phoneAuthController,
                             decoration: const InputDecoration(
@@ -115,10 +116,10 @@ class _MainRegistrationScreenState extends State<MainRegistrationScreen> {
                       child: MaterialButton(
                         color:  Palette.greenColor,
                         onPressed: () => _submitVerifyPhoneNumber(context),
-                        child: const Text(
+                        child:  Text(
                           AppConst.next,
                           style: TextStyle(
-                            fontSize: 18,
+                            fontSize: 18.sp,
                             color: Colors.white,
                           ),
                         ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:whats_app_clone_clean_arch/common/extension/custom_theme_extension.dart';
 
 
@@ -17,12 +18,12 @@ class ShortHBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: height ?? 4,
-      width: width ?? 24,
-      margin: const EdgeInsets.symmetric(vertical: 4),
+      height: height ?? 4.h,
+      width: width ?? 24.w,
+      margin:  EdgeInsets.symmetric(vertical: 4.h),
       decoration: BoxDecoration(
         color: color ?? context.theme.greyColor!.withOpacity(.2),
-        borderRadius: BorderRadius.circular(4),
+        borderRadius: BorderRadius.circular(4.r),
       ),
     );
   }

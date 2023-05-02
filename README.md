@@ -1,16 +1,36 @@
-# whats_app_clone_clean_arch
+# WhatsApp Clone - Clean Architecture Flutter
 
-A new Flutter project.
+WhatsApp Clone Flutter - with Clean Architecture Firebase as backend (Full-Stack+BloC Pattern) is Underdevelopment.
 
-## Getting Started
+# Application Architecture
 
-This project is a starting point for a Flutter application.
+Application is build with Clean Architecture of Robert C. Martin (Uncle Bob) TDD pattern Clean Code + Maintainable
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# App Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<ul dir="auto">
+<li>WhatsApp Mobile App Responsive UI</li>
+<li>Phone  Authentication  &amp; Verifying OTP </li>
+<li>Set your Profile </li>
+<li>Sending GIFs</li>
+<li>Sending Emojis</li>
+<li>Picking Images from gallery</li>
+<li>Sending Voice Chat</li>
+<li>Sending Videos</li>
+<li>Camera feature</li>
+<li>Chatting with friends in your contacts</li>
+<li>Invite friends to whatsApp Clone app</li>
+<li>Upload your Status</li>
+<li>Create Groups</li>
+<li>Show contacts who you can chat with</li>
+<li>Online/offline feature</li>
+<li>Automatic Scrolling on New Message</li>
+
+</ul>
+
+
+
+# Feedback
+
+If you have any feedback, please reach out to me at muhammedrefaat2020@gmail.com .

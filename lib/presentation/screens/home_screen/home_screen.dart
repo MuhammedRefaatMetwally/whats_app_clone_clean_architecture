@@ -1,20 +1,19 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:whats_app_clone_clean_arch/common/utils/app_const.dart';
 import 'package:whats_app_clone_clean_arch/common/utils/page_const.dart';
-import 'package:whats_app_clone_clean_arch/presentation/pages/group_page/create_group_screen.dart';
+import 'package:whats_app_clone_clean_arch/presentation/bloc/auth/auth_cubit.dart';
 import 'package:whats_app_clone_clean_arch/presentation/screens/home_screen/widgets/search_widget.dart';
 import '../../../common/utils/palette.dart';
 import '../../../domain/entities/user_entity.dart';
-import '../../bloc/auth/auth_cubit.dart';
 import '../../bloc/home/home_cubit.dart';
-import '../../pages/calls_page/calls_page.dart';
-import '../../pages/camera_page/camera_page.dart';
-import '../../pages/chat_page/chat_page.dart';
-import '../../pages/status_page/status_screen.dart';
-import '../../pages/status_page/widgets/status_contacts_screen.dart';
 import '../../widgets/global/custom_tab_bar.dart';
+import '../../widgets/status_widgets/status_contacts_screen.dart';
+import '../calls_screen/calls_page.dart';
+import '../camera_screen/camera_page.dart';
+import '../chat_screen/chat_page.dart';
 
 class HomeScreen extends StatelessWidget {
   final UserEntity userInfo;
@@ -55,14 +54,16 @@ class HomeScreen extends StatelessWidget {
                     InkWell(
                         onTap: () => cubit.onSearching(),
                         child: const Icon(Icons.search)),
-                    const SizedBox(
-                      width: 5,
+                     SizedBox(
+                      width: 4.w,
                     ),
                     PopupMenuButton(itemBuilder: (context)=>[
                        PopupMenuItem(child: const Text(AppConst.createGroup),
                          onTap: ()=>Future(()=>Navigator.pushNamed(context, PageConst.createGroupScreen,arguments: userInfo))
                          //wrap it with future cuz popupMenu when u navigate it does no dismiss itself so it pops what it navigates
-                      ,)
+                      ,),
+                      PopupMenuItem(child: const Text(AppConst.logOut),
+                        onTap: ()=>BlocProvider.of<AuthCubit>(context).loggedOut(),)
                     ],
                     )],
                 )

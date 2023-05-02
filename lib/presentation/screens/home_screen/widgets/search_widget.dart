@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:whats_app_clone_clean_arch/common/utils/app_const.dart';
 import '../../../bloc/home/home_cubit.dart';
 
@@ -12,8 +13,8 @@ class SearchWidget extends StatelessWidget {
       builder: (context, state) {
         final cubit=HomeCubit.i(context);
         return Container(
-          height: 45,
-          margin: const EdgeInsets.only(top: 25),
+          height: 48.h,
+          margin: const EdgeInsets.only(top: 24),
           decoration: BoxDecoration(color: Colors.white, boxShadow: [
             BoxShadow(
                 color: Colors.black.withOpacity(.3),

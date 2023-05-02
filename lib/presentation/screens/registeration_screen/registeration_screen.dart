@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:whats_app_clone_clean_arch/common/utils/app_const.dart';
 import 'package:whats_app_clone_clean_arch/presentation/screens/registeration_screen/widgets/main_registeration_screen.dart';
 import '../../../common/utils/palette.dart';
@@ -7,9 +8,9 @@ import '../../../data/model/user_model.dart';
 import '../../bloc/auth/auth_cubit.dart';
 import '../../bloc/phone_auth/phone_auth_cubit.dart';
 import '../../bloc/user/user_cubit.dart';
-import '../../pages/phone_veriffication_page/phone_verification_page.dart';
-import '../../pages/user_information_page/user_informtion_screen.dart';
 import '../home_screen/home_screen.dart';
+import '../phone_veriffication_screen/phone_verification_page.dart';
+import '../user_information_page/user_informtion_screen.dart';
 
 class RegistrationScreen extends StatelessWidget {
   const RegistrationScreen({super.key});
@@ -27,7 +28,7 @@ class RegistrationScreen extends StatelessWidget {
               ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                 backgroundColor: Colors.red,
                 content: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 15),
+                  padding:  EdgeInsets.symmetric(horizontal: 16.w),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: const [
